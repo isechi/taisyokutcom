@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- <table border="1"> -->
+    <!-- 表を作るのをタスクがあるもの全てを順番にとってくる -->
+    <!-- {% for item in task_list %}
+    <tr> -->
+        <!-- 辞書型でidとタスクをとってくる。これで表として書く -->
+        <!-- <td>{{item["name"]}}</td>
+        <td>{{item["date"]}}</td>
+        <td>{{item["task"]}}</td>
+    </tr>
+    {% endfor %}
+</table> -->
+
+<div class="i_bbs_form">
+    <br>
+    <h1>みなさんの退職体験です</h1>
+    <br>
+    {% for item in task_list %}
+    <!-- sizeはサイズ、maxlengthは送れる文字数制限 -->
+    <!-- name=の部分はパイソン上から管理するための名前 -->
+    <div class="i_bbs_list">
+        <div>
+            <p style="font-size: small;">投稿者：{{item["name"]}}さん</p>
+        </div>
+        <div>
+            <p style="font-size: small;">いつ頃？：{{item["date"]}}</p>
+            <br>
+        </div>
+        <div>
+            <p class="i_bbstitle">わたしが共有したい退職体験</p>
+            <p>{{item["task"]}}</p>
+        </div>
+    </div>
+        <p class="i_border">----------------------------------------</p>
+        {% endfor %}
+</div>
+
+
+
+
+    <!-- {% for item in comment_list %}
+    <div class="bbs_content">
+      <p style="font-weight: bold">{{item["name"]}}</p>
+      <p style ="color:gray">【{{item["date"]}}】</p>
+      <p>{{item["name"]}}</p> -->
+        <!-- <a style="color: red" href="/edit/{{item['id']}}">編集</a>
+        <form action="/del" method="post">
+          <input type="hidden" name="comment_id" value="{{item['id']}}">
+          <input type="submit" name="delete" value="削除する">
+      </form><br><br> -->
+    <!-- </div>
+    {% endfor %} -->
+
+
+
+
+{% endblock %}

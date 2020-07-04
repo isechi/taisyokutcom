@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body>
+    <div class=i_secbox>
+        <a class="i_btn-twitter" href="https://twitter.com/share?url=seisaku4.html&text=退職したら社会保険や税金ってどうなるんだっけ？！"
+            rel="nofollow" target="_blank">みんなにTwitterでおしえてあげよう</a>
+
+        <h1 class="i_toptxt">退職したら社会保険や税金ってどうなるんだっけ<img src="./static/img/question_boy.png" alt="" style="
+            width: 50px;
+        "></h1>
+        <!-- <img class="checkimg" src="./static/img/study_check.png" alt=""> -->
+        <h2 id="i_sha1" class="i_sectitle">国民健康保険と健康保険</h2>
+        <p class="i_sectxt">会社を退職した場合、健康保険の被保険者ではいられなくなります。<br>
+            そのため日本国民全員が加入できる国民健康保険への切り替える必要があります。 <br>
+            <br>
+            ただし例外的に会社を辞めても引き続き個人で加入できる「任意継続被保険者制度」（最長2年間）があります。<br>
+            国民健康保険へ切り替えるか、健康保険の任意継被保険者制度を活用するか<br>
+            いずれかの手続きをしておかないと、医療機関にかかった時10割負担の医療費がかかってしまうため注意しましょう。
+        </p>
+        <br>
+        <h2 id="i_sha2" class="i_sectitle">住民税</h2>
+        <p class="i_sectxt">住民税は、住んでいる都道府県と市区町村に納める税金です。 <br>
+            前年1月～12月の1年間の所得に対する税金を、翌年6月から翌々年5月にかけて後払いで支払います。<br>
+            退職して無給になったとしても、その期間中、働いていた時期の所得に対する住民税の支払いが必要になります。<br>
+            会社勤めの間は、課税額を12分割して毎月の給与から天引きされていました。<br>
+            しかし会社を辞めると、課税額を4分割して年に4回住民税を納める必要があります。<br>
+        </p>
+        <br>
+        <h2 class="i_sectitle">住民税の金額は、前年の所得によって決まる</h2>
+        <p class="i_sectxt">前述の通り、住民税の金額は前年の所得で決まります。<br>
+            転職・退職によって収入が減っても、それによって支払う住民税の金額が減るのは、翌年以降なのです。<br>
+            この点に注意をしておかないと、転職・退職後に住民税の支払いが思わぬ負担になりかねません。</p>
+
+
+        <br>
+        <br>
+        <h2 id="i_sha3" class="i_sectitle">失業保険</h2>
+        <p class="i_sectxt">倒産や解雇などの会社都合で離職した場合には、失業手当の申請手続きから1週間の待機期間後に失業状態と認定され <br>
+            雇用保険に加入していた期間に応じて失業手当を受給できます。<br>
+            一方、自己都合の場合には、1週間の待機期間後に3か月の給付制限期間があり、その分の失業手当は給付されません。<br>
+            また、離職理由は失業手当を受給できる日数にも影響するため、重要です。<br>
+            
+
+            <br>
+            <h1 class="i_toptxt">失業手当を受け取るのになにを持っていけばいいんだろう<img src="./static/img/question_boy.png" alt="" style="
+            width: 50px;
+        "></h1>
+            <br>
+            <h2 class="i_sectitle">失業手当を受け取るために必要な書類</h2>
+
+            <ul class="i_item_list">
+                <li class="i_sectxt i_items">雇用保険被保険者離職票</li>
+                <li class="i_sectxt i_items">個人番号確認書類（マイナンバーカードなど）</li>
+                <li class="i_sectxt i_items">運転免許証やパスポートなどの身分証明書</li>
+                <li class="i_sectxt i_items">写真2枚（縦3cm×横2.5cm）</li>
+                <li class="i_sectxt i_items">印鑑</li>
+                <li class="i_sectxt i_items">本人名義の普通預金口座</li>
+            </ul>
+            <br>
+            <h1 id="i_sha4" class="i_toptxt">公式サイトもしっかり確認しておきたいな<img src="./static/img/question_boy.png" alt="" style="
+                    width: 50px;
+                "></h1>
+            <br>
+            <h2 class="i_sectitle">そんなあなたのためにリンクを貼っておきますね<img src="./static/img/search_mushimegane.png" alt="" style="
+                    width: 50px;
+                "></h2>
+            <ul>
+                <li><a class="i_joblink" href="https://www.kokuho.or.jp/index.html">公益社団法人 国民健康保険中央会</li>
+            </ul>
+            <br>
+            <ul class="i_menubar">
+                <li><a class="i_menucontents" href="#i_sha1">国民健康保険と健康保険</a></li>
+                <li><a class="i_menucontents" href="#i_sha2">住民税</a></li>
+                <li><a class="i_menucontents" href="#i_sha3">失業保険</a></li>
+                <li><a class="i_menucontents" href="#i_sha4">公式サイトチェック</a></li>
+            </ul>
+
+            <button><a href="/index">topページに戻る</a></button>
+    </div>
+</body>
+
+
+{% endblock %}

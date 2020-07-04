@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<!-- actionは必ず指定する。送信先をかく -->
+<!-- actionにルーティングを書くことでこのフォームの送信ボタンが押されたときに/addにとぶ -->
+<!-- 今回は投稿するためにmethodはPOSTを使う -->
+<div class="i_bbs_form1">
+    <br>
+    <h1>もしよかったら、あなたの退職体験も教えてね。</h1>
+    <form action="/add" method="POST">
+    <!-- sizeはサイズ、maxlengthは送れる文字数制限 -->
+    <!-- name=の部分はパイソン上から管理するための名前 -->
+        <div>
+            <p>ニックネーム</p>
+            <!-- placeholderはテキストの初期値 -->
+            <input class="i_input" type="text" name="name" placeholder="個人情報には気をつけてね">
+        </div>
+        <div>
+            <p>あなたの退職体験はいつ頃の体験？</p>
+            <input class="i_input" type="text" name ="date" placeholder="20○○年○○月頃と具体的に書いてね">
+        </div>
+        <div>
+            <p>あなたのみんなと共有したい退職体験を教えてね（当時困っていたこと、退職してよかったことなど）</p>
+            <!-- textareaにはplaceholder効かない -->
+            <textarea class="i_textarea" type="text" name="task"> </textarea>
+        </div>
+        <div>
+            <input class="i_contact-submit" type="submit" name="save" value="送信">
+        </div>
+</form>
+</div>
+{% endblock %}

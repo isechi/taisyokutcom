@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+{% block content %}
+
+<body>
+   <h1>次の中から気になる項目を選んでね</h1>
+   <br>
+   <br>
+   <br>
+   <div class="container">
+      <div class="content">
+         <a href="/seisaku3"><img src="../static/img/年金手帳.jpg" alt="手帳" class = "image2"></a>
+         <p class="hidebox1">年金</p>
+      </div>
+      <div class="content">
+         <a href="/seisaku4"><img src="../static/img/お金１００.jpg" alt="" class="image3"></a>
+         <p class="hidebox2">社会保険・税金</p>
+      </div>
+      <div class="content">
+         <a href="/seisaku5"><img src="../static/img/転職.jpg" alt="" class="image4"></a>
+         <p class="hidebox3">転職</p>
+      </div>
+      <div class="content">
+         <a href="/tarou"><img src="../static/img/business_taisyoku_todoke.png" alt="" class="image5"></a>
+         <p class="hidebox4">退職太郎の例</p>
+      </div>
+   </div>
+   <button class="return"><a href="/index">topページに戻る</a></button>
+</body>
+
+
+{% endblock %}
