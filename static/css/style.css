@@ -16,7 +16,7 @@ header {
     display: flex;
     background-color:#F8E551;
     height: 90px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -106,7 +106,7 @@ footer .copyright {
     font-weight: 12px;
     text-align: center;
     letter-spacing: 1px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /*--------------------------------------*/
