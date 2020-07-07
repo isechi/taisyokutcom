@@ -275,13 +275,15 @@ header div:first-child{
     border:none;
     position:relative;
     font-size:1.6em;
-    padding:0 2em;
+    padding:9px 2em;
     cursor:pointer;
     transition:800ms ease all;
     outline:none;
     text-align: center;
     width: 100px;
-    margin-left: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
   }
 .title2:hover{
     background:#fff;
