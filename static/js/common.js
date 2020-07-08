@@ -104,12 +104,11 @@ $('.i_byeboy').hover(function(){
     $('.i_bye').css('background-color','white');
     });
 
-$('.hum_nav').hover(function(){
-  $('.sp_globalmenu').css('display','block');
-  },
-  function(){
-  $('.sp_globalmenu').css('display','none'); 
+$('.hum_nav').on('click',function(){
+  $('.sp_globalmenu').toggleClass('is_active');
   });
+  // $('#btn').on('click', function() {
+  //   $(this).toggleClass('is-active');
 
 
 });

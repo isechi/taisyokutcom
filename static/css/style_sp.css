@@ -71,7 +71,9 @@ width: 300px;
 
 }
 
-
+.is_active{
+  display: block;
+}
 
 .sp_globalmenu ul{
   background-color: #F8E551;
