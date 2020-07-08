@@ -19,15 +19,15 @@ header {
     /* width: 100%; */
 }
 
-
+/* 
 header ul {
   width:800px; 
   margin: auto;
   display: flex;
   display: none;
   }
-  
-  header li {
+   */
+  /* header li {
   color:#acacac; 
   width: 25%;
   line-height:60px; 
@@ -38,15 +38,65 @@ header ul {
   header li:hover{ CSSの擬似クラスについても検索してみると良いかもしれません。
     color:#111;
     display: none
-  }
+  } */
+
+  /* header div:first-child {
+    margin-right: auto;
+    display: none;
+} */
+
+header div{
+/* margin-left: 100px; */
+margin-right: 10px;
+margin-top: 30px;
+display: none;
+}
+/* header div:first-child{
+margin-left: 0;
+display: none;
+} */
+
+.header-logo {
+font-size: 25px;
+font-weight: bold;
+display: block;
+}
+
+.sp_globalmenu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: none;
+
+}
 
 
+
+.sp_globalmenu ul{
+  background-color: #F8E551;
+  padding: 38px;
+  border-radius: 33%;
+  position: fixed;
+  top: 2px;
+  left: 44%;
+  
+}
 
 footer {
     background-color:#F8E551;
     height: 104px;
 }
 
+.hum_nav{
+font-size: 27px;
+/* background-color: white; */
+border-radius: 50%;
+height: 50%;
+position: fixed;
+top: 2px;
+left: 89%;
+padding-top: 10px;
+}
 /*--------------------------------------*/
 
 
@@ -254,27 +304,7 @@ dd {
 
 
 /*--------------------------------------*/
-header div:first-child {
-      margin-right: auto;
-      display: none;
-}
 
-header div{
-  margin-left: 100px;
-  margin-right: 20px;
-  margin-top: 30px;
-  display: none;
-}
-header div:first-child{
-  margin-left: 0;
-  display: none;
-}
-
-.header-logo {
-  font-size: 25px;
-  font-weight: bold;
-  display: block;
-}
 
 .title2 {
     background:#1AAB8A;
@@ -579,7 +609,7 @@ ul .i_items:before {
   border-bottom:dashed 2px black;
   padding-bottom: 5px;
   font-weight: bold;
-  display: none;
+  /* display: none; */
 }
 .i_nosec{
   text-align: center;

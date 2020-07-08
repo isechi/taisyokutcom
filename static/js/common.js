@@ -104,5 +104,12 @@ $('.i_byeboy').hover(function(){
     $('.i_bye').css('background-color','white');
     });
 
+$('.hum_nav').hover(function(){
+  $('.sp_globalmenu').css('display','block');
+  },
+  function(){
+  $('.sp_globalmenu').css('display','none'); 
+  });
+
 
 });

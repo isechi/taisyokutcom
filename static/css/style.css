@@ -74,11 +74,18 @@ header ul {
     width: 40%;
   }
 
+.sp_globalmenu{
+  display: none;
+}
+
 footer {
     background-color:#F8E551;
     height: 104px;
 }
 
+.hum_nav{
+  display: none;
+}
 /*--------------------------------------*/
 
 
