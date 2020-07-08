@@ -24,6 +24,7 @@ header ul {
   width:800px; 
   margin: auto;
   display: flex;
+  display: none;
   }
   
   header li {
@@ -31,10 +32,12 @@ header ul {
   width: 25%;
   line-height:60px; 
   transition:0.2s; 使い方が分からないCSSプロパティはその都度検索していきましょう!!
+  display: none;
   }
   
   header li:hover{ CSSの擬似クラスについても検索してみると良いかもしれません。
     color:#111;
+    display: none
   }
 
 
@@ -49,9 +52,6 @@ footer {
 
 a {
   text-decoration: none;
-}
-header a{
-  width: 40%;
 }
 
 
@@ -254,27 +254,26 @@ dd {
 
 
 /*--------------------------------------*/
-.i_header_manu{
-  text-align: right;
-}
-
 header div:first-child {
       margin-right: auto;
+      display: none;
 }
 
 header div{
-  /* margin-left: 100px;
+  margin-left: 100px;
   margin-right: 20px;
-  margin-top: 30px; */
-  margin: 30px 10px;
+  margin-top: 30px;
+  display: none;
 }
 header div:first-child{
   margin-left: 0;
+  display: none;
 }
 
 .header-logo {
   font-size: 25px;
   font-weight: bold;
+  display: block;
 }
 
 .title2 {
@@ -580,6 +579,7 @@ ul .i_items:before {
   border-bottom:dashed 2px black;
   padding-bottom: 5px;
   font-weight: bold;
+  display: none;
 }
 .i_nosec{
   text-align: center;
